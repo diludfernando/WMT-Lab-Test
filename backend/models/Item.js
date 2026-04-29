@@ -27,6 +27,11 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
+    color: {
+      type: String,
+      required: [true, "Color is required"],
+      trim: true,
+    },
   },
   { timestamps: true }
 );
